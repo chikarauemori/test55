@@ -3,147 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>景品応募フォーム</title>
+    <title>ユーザー登録</title>
+     <script
+      src="https://kit.fontawesome.com/d0a601627a.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://yubinbango.github.io/yubinbango/yubinbango.js"
       charset="UTF-8"
     ></script>
-    <script
-    src="https://kit.fontawesome.com/d0a601627a.js"
-    crossorigin="anonymous"
-  ></script>
-  <link
-    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    rel="stylesheet"
-  />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>
-      <img
-        src="https://i.ibb.co/Wv8X3LVh/1.png"
-        alt="IMG-5451"
-        width="100px"
-        height="100px"
-      />
-      クールシェア宝塚2025<br />
-      景品応募フォーム
-    </h1>
+          <h1>
+        <img
+          src="https://i.ibb.co/Wv8X3LVh/1.png"
+          alt="IMG-5451"
+          width="100px"
+          height="100px"
+        />
+        クールシェア宝塚2025<br />
+        スタンプラリーカード
+      </h1>
+      <h3 class="line"> LINEでユーザー登録をしよう！！</h3>
+      <h4><a href="https://liff.line.me/2007154146-Y5jGo0G3">ユーザー登録はここをタップ！</a></h4>
 
-    <form
-      id="userForm"
-      action="https://script.google.com/macros/s/AKfycbyy5xCRZc3MHj0-fAehC9EuErnxa852PsPGKRe85Gi2WczPsn1jtECoGGjIN_VQBtI/exec"
-      method="post"
-      class="h-adr"
-      onsubmit="processCheckboxes(event)"
-    >
-      <span class="p-country-name" style="display: none">Japan</span>
+        <img class="user" src="./ユーザ登録方法.png">
 
-      <p>住所を入力してください</p>
-      〒<input
-        type="text"
-        name="address-1"
-        id="address-1"
-        class="p-postal-code"
-        size="3"
-        maxlength="3"
-      />
-      -
-      <input
-        type="text"
-        name="address-2"
-        id="address-2"
-        class="p-postal-code"
-        size="4"
-        maxlength="4"
-      /><br />
-      都道府県:<input
-        type="text"
-        name="address-3"
-        id="address-3"
-        class="p-region"
-      /><br />
-      地区町村:<input
-        type="text"
-        name="address-4"
-        id="address-4"
-        class="p-locality"
-      /><br />
-      町名:<input
-        type="text"
-        name="address-5"
-        id="address-5"
-        class="p-street-address p-extended-address"
-      /><br />
-      番地:<input type="text" name="address-6" id="address-6" />
-      <p>日中繋がる連絡先を入力してください</p>
-      <input type="text" name="phoneNumber" id="phoneNumber" />
-      <p>当事業に参加したご感想をお聞かせください。</p>
-      <textarea rows="3" name="message" id="message"></textarea>
-      <p>ご希望の景品を選択してください(複数選択可能)</p>
-      <label><input type="checkbox" name="prizes" value="景品1" />景品1</label>
-      <label><input type="checkbox" name="prizes" value="景品2" />景品2</label>
-      <label><input type="checkbox" name="prizes" value="景品3" />景品3</label>
-      <label><input type="checkbox" name="prizes" value="景品4" />景品4</label>
-      <label><input type="checkbox" name="prizes" value="景品5" />景品5</label
-      ><br />
-      <input type="hidden" name="prizesList" id="prizesList" />
+      <h3>《個人情報の取り扱いについて》
+        <h5 class="information">本イベントでは、<br>LINE認証で取得したユーザーIDのみを使用します。<br>ユーザーIDは、イベントのログインのために利用され、<br>その他の情報<br>（表示名・プロフィール画像・ステータスメッセージ）<br>は一切使用しません。</h5>
+        <h5 class="information">アンケートにてご提供いただいたすべての個人情報は、<br>本イベント及び、景品当選時にのみ使用します。<br>第三者に提供されることはありません。</h5></h3>
 
-      <button type="submit" value>送信</button>
-    </form>
-    <script>
-      function processCheckboxes(event) {
-        event.preventDefault();
-        const selectedPrizes = Array.from(
-          document.querySelectorAll('input[name="prizes"]:checked')
-        )
-          .map((checkbox) => checkbox.value)
-          .join(",");
 
-        document.getElementById("prizesList").value = selectedPrizes;
-        document.querySelector("form").submit();
-        event.target.submit();
-      }
-    </script>
-    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-    <script>
-      liff
-        .init({
-          liffId: "2007154146-Y5jGo0G3", // あなたのLIFF ID
-        })
-        .catch((err) => {
-          console.log(err);
-        });
 
-      liff.ready.then(() => {
-        if (!liff.isLoggedIn()) {
-          liff.login();
-        }
 
-        // ユーザープロフィール情報を取得
-        liff
-          .getProfile()
-          .then((profile) => {
-            const userId = profile.userId; // ユーザーIDを取得
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
 
-            // ユーザーIDを非表示のinputフィールドとしてフォームに追加
-            const userIdField = document.createElement("input");
-            userIdField.type = "hidden"; // 見えないフィールドとして設定
-            userIdField.name = "userId"; // サーバー側で受け取る名前を指定
-            userIdField.value = userId; // ユーザーIDの値をセット
 
-            // フォームにuserIdフィールドを追加
-            document.getElementById("userForm").appendChild(userIdField);
 
-            // 必要に応じてボタンのテキストを変更する
-            const submitButton = document.querySelector("button");
-            submitButton.textContent = "スタンプラリーカード";
-          })
-          .catch((err) => {
-            console.log("プロフィール取得エラー: ", err);
-          });
-      });
-    </script>
-      <nav>
+
+
+ 
+ <nav>
     <ui class="menu">
       <li>
         <a href="https://chikarauemori.github.io/test57/" target="_self"
@@ -176,13 +90,8 @@
         >
       </li>
   </nav>
-<style>
  
-            @media screen and (max-width: 768px) {
-      * {
-      font-size:85% ; /* スマホではフォントサイズを小さくする */
-      }
-      }
+<style>
       .menu {
         position: fixed;
         left: 0;
@@ -225,26 +134,44 @@
           padding: 5px;
         }
       }
-      h1 {
+
+          h1 {
         font-family: sans-serif;
         display: flex;
         align-items: center; /* 縦方向の中央揃え */
         justify-content: center; /* 横方向の中央揃え */
         text-align: center;
         background: skyblue;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 85%;
       }
 
       input {
         font-size: 200%;
         background: skyblue;
+        display: inline-block;
       }
 
       button {
         font-size: 200%;
+        display: inline-block;
       }
-    </style>
+      .information{
+        border-style: dotted;
+        display: inline-block;
+      }
+
+      .line{
+        border-style: double;
+        background-color: #06C755;
+        color:white;
+        display: inline-block;
+      }
+      .user {
+        width:100%
+      }
+      </style>
   </body>
 </html>
